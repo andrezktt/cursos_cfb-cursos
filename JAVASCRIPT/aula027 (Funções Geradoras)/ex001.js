@@ -31,4 +31,6 @@ console.log(``)
 console.log(`TERCEIRO EXEMPLO:`)
 console.log(``)
 
+function* contador() 
+
 
