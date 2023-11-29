@@ -31,6 +31,16 @@ console.log(``)
 console.log(`TERCEIRO EXEMPLO:`)
 console.log(``)
 
-function* contador() 
-
-
+function* contador() {
+    let i = 0
+    while(true) { // looping da função que faz com que ela seja infinita, ou seja, gere uma sequência de números inninterruptamente
+        yield i++
+        if (i > 10) { // mas a execução das chamadas, e consequentemente da função só é interrompida graças à esta condição imposta antes do próprio looping de chamadas
+            break // o comando específico que interrompe a função caso o número seja maior que 5 é o "break"
+        }
+    }
+}
+const itcont = contador() // criação de um iterador responsável por chamar toda a função estabelecida anteriormente
+for (let c of itcont) { // este loop executa as chamadas infinitamente, ou seja, não é necessário executar cada chamada pontualmente
+    console.log(c) // chamada final que executa toda a função
+}
