@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex001.css">
+    <title>Calculadora de Operações</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <div class="valores">
+            <input type="number" placeholder="Insira o Primeiro Valor!" name="valor_1" id="valor_1">
+        </div>
+        <div class="valores">
+            <input type="number" placeholder="Insira o Segundo Valor!" name="valor_2" id="valor_2">
+        </div>
+        <div class="valores">
+            <label for="resultado"><strong>Resultado: </strong></label>
+            <input type="text" value="0" name="res" id="res" readonly style="cursor: not-allowed;">
+        </div>
+        <div class="operators">
+            <button id="btnSomar">Somar</button><br>
+            <button id="btnSubtrair">Subtrair</button><br>
+            <button id="btnMultiplicar">Multiplicar</button><br>
+            <button id="btnDividir">Dividir</button>
+        </div>
+    </main>
+    <script src="ex001.js"></script>
+</body>
+</html>
