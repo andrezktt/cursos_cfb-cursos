@@ -9,6 +9,12 @@ const portas = document.querySelector("#f_portas")
 
 let arrayCarros = []
 
+const removerCarro = (quem) => {
+    arrayCarros = arrayCarros.filter((element) => {
+        return element.nome != quem
+    })
+}
+
 tipoMilitar.addEventListener("click", (evento) => {
     modelo.value = ""
     portas.value = ""
@@ -21,20 +27,29 @@ tipoMilitar.addEventListener("click", (evento) => {
 tipoNormal.addEventListener("click", (evento) => {
     blindagem.value = ""
     municao.value = ""
-    blindagem.setAttribute("disabled")
-    municao.setAttribute("disabled")
+    blindagem.setAttribute("disabled", "disabled")
+    municao.setAttribute("disabled", "disabled")
 })
 
 const exibicaoCarros = () => {
     carros.innerHTML = ""
     arrayCarros.map((c) => {
         const div = document.createElement("div")
+        const btn = document.createElement("button")
+        btn.addEventListener("click", (evento) => {
+            quemRemover = evento.target.parentNode.dataset.nome
+            removerCarro(quemRemover)
+            exibicaoCarros()
+        })
         div.setAttribute("class", "carro")
-        div.innerHTML = `Modelo: ${c.nome} <br/>`
-        div.innerHTML += `Portas: ${c.portas} <br/>`
-        div.innerHTML += `Cor: ${c.cor} <br/>`
-        div.innerHTML += `Blindagem: ${c.blindagem} <br/>`
-        div.innerHTML += `Munição: ${c.municao} <br/>`
+        div.setAttribute("data-nome", c.nome)
+        div.innerHTML = `<strong>Modelo:</strong> ${c.nome} <br/>`
+        div.innerHTML += `<strong>Portas:</strong> ${c.portas} <br/>`
+        div.innerHTML += `<strong>Cor:</strong> ${c.cor} <br/>`
+        div.innerHTML += `<strong>Blindagem:</strong> ${c.blindagem} <br/>`
+        div.innerHTML += `<strong>Munição:</strong> ${c.municao} <br/>`
+        btn.innerHTML = "Remover"
+        div.appendChild(btn)
         carros.appendChild(div)
     })
 }
