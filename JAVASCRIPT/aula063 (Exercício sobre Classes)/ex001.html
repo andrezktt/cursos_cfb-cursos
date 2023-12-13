@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Aula 63 - Curso Javascript</title>
+    <link rel="stylesheet" href="ex001.css">
+</head>
+<body>
+    <div id="criarCarro" class="criarCarro">
+        <h1>Cadastro de Carros:</h1>
+        <div class="campoForm">
+            <input type="text" name="f_nome" id="f_nome" placeholder="Modelo:">
+        </div>
+        <div class="campoForm">
+            <input type="number" name="f_portas" id="f_portas" placeholder="Número de Portas">
+        </div>
+        <div class="campoForm">
+            <input type="number" name="f_blindagem" id="f_blindagem" placeholder="Porcentagem da Blindagem" disabled value="0">
+        </div>
+        <div class="campoForm">
+            <input type="number" name="f_municao" id="f_municao" placeholder="Total de Munição" disabled value="0">
+        </div>
+        <div class="campoForm">
+            <label for="tipo">Tipo de Veículo: </label>
+            <div class="radio">
+                <input type="radio" name="f_tipo" id="f_tipoNormal" value="n" checked> Normal
+            </div>
+            <div class="radio">
+                <input type="radio" name="f_tipo" value="m" id="f_tipoMilitar"> Militar
+            </div>
+        </div>
+        <div class="campoForm">
+            <button id="btn_add">Adicionar</button>
+        </div>
+    </div>
+    <div class="carros">
+        <!-- Adicionar os carros aqui -->
+    </div>
+
+    <script src="ex001.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carros {
+    display: flex;
+    width: 350px;
+    border: 3px solid #5079cf;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.criarCarro {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.campoForm input {
+    background-color: #eee;
+    padding: 7.5px 10px;
+    border-radius: 7.5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.campoForm label {
+    font-weight: 600;
+    margin-bottom: 7.5px;
+}
+    
+.campoForm button {
+    background-color: #3b5998;
+    color: white;
+    cursor: pointer;
+    width: 180px;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}

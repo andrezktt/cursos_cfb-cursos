@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.carros {
+    display: flex;
+    width: 100%;
+    border: 3px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carro {
+    border: 3px solid blue;
+    background-color: #8cf;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width: 200px;
+}
