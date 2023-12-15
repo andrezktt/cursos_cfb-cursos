@@ -7,7 +7,7 @@ console.log(teclasNumeros)
 console.log(teclasOperacoes)
 console.log(teclaResultado)
 
-teclasOperacoes.map((elemento) => {
+teclasNumeros.map((elemento) => {
     elemento.addEventListener("click", (evento) => {
         display.innerHTML += evento.target.innerHTML
     })
