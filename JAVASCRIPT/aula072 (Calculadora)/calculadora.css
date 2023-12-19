@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aaa;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+}
+
+/* TITULO */
+.div_nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    margin-bottom: 10px;
+}
+
+.div_nome > p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #444;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* DISPLAY */
+.div_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 30px;
+    background-color: #ccc;
+    color: white;
+    margin: 5px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.253);
+}
+
+.display {
+    color: black;
+    width: 220px;
+    text-align: right;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* TECLAS */
+.div_teclas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 225px;
+}
+
+.teclas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: black;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.253);
+    margin: 2.5px;
+}
+
+.teclas:hover {
+    background-color: #aaa;
+}
+
+.tecla_operacoes {
+    background-color: #3b5998 !important;
+    color: white !important;
+}
+
+.tecla_operacoes:hover {
+    background-color: #344d85 !important;
+}
+
+#tecla_0 {
+    width: 102.5px;
+}

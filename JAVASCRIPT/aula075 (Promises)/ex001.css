@@ -1,0 +1,11 @@
+.numero {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ok {
+    color: rgb(37, 94, 160);
+}
+
+.erro {
+    color: rgb(255, 102, 0);
+}
