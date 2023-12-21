@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #343a40;
+}
+
+.timer {
+    background-color: #495057;
+    width: 350px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 280px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+}
+
+h1 {
+    color: #adb5bd;
+}
+
+#div_data, #div_relogio {
+    background-color: #6c757d;
+    color: #ced4da;
+
+    padding: 10px;
+    margin: 10px 50px;
+    border-radius: 7px;
+
+    font-size: large;
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    font-size: 1em;
+    font-weight: 700;
+    color: #adb5bd;
+    margin-top: 7px;
+}
+
+label[for = "alarme"] {
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type = "number"] {
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #343a40;
+    background-color: #adb5bd;
+}
+
+button {
+    padding: 10px 81px;
+    border-radius: 7px;
+    background-color: #6c757d;
+    color: #ced4da;
+    margin-top: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #adb5bd;
+    color: #343a40;
+}
+
+p {
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarme {
+    background-color: #eb5e28 !important;
+}

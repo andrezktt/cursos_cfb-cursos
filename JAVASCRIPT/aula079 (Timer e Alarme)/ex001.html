@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex001.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Timer Orange - by Me</title>
+</head>
+<body>
+    <div id="timer" class="timer">
+        <h1 class="flex">Timer</h1>
+        <div id="div_data" class="flex"></div>
+        <div id="div_relogio" class="flex">00:00:00</div>
+        <div id="div_alarme">
+            <label for="alarme" id="hora_alarme">Alarme (minutos): </label>
+            <label for="" id="tempo_restante">Tempo Restante:</label>
+            <input type="number" name="tempoAlarme" id="tempo_alarme" value="0" min="0">
+        </div>
+        <div id="comandos" class="comandos">
+            <button id="btn_ligar" class="flex">Ligar</button>
+            <button id="btn_parar" class="flex">Parar</button>
+        </div>
+    </div>
+    <script src="ex001.js" class="relogio"></script>
+</body>
+</html>
