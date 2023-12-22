@@ -1,0 +1,20 @@
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.olhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 150px;
+}
+.olho {
+    width: 150px;
+    height: 150px;
+    transform-origin: center center;
+}
