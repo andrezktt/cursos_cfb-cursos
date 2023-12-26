@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Navegação no Histórico e Redirecionamento de Página</title>
+</head>
+<body>
+    <div id="formulario" class="formulario">
+        <h1>Navegação</h1>
+        <form onsubmit="event.preventDefault()">
+            <input type="url" name="url" id="url" placeholder="https://www.youtube.com/" pattern="https://.*" size="30" required>
+            <button id="btn_url">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

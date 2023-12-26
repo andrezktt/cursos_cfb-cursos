@@ -16,9 +16,9 @@ body {
 .timer {
     background-color: #495057;
     width: 350px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: auto;
-    padding: 15px 20px;
+    padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
 }
 
