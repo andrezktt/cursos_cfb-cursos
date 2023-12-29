@@ -1,0 +1,48 @@
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #eee;
+}
+
+.painel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 25px 10px;
+    background-color: #3b5998;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #eee;
+    outline: 1px solid #3b5998;
+    color: #3b5998;
+}
+
+.carro {
+    background-color: #3b5998;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
