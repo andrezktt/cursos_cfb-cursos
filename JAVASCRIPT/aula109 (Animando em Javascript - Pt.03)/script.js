@@ -12,20 +12,21 @@ let anima = null
 
 const mover = (direcao) => {
     carro.style.left = parseInt(carro.style.left) + (10*direcao) + "px"
+    anima = setTimeout(mover, 0, direcao)
 }
 
 btn_esquerda.addEventListener("click", (evento) => {
-    clearInterval(anima)
-    anima = setInterval(mover, 0, -1)
+    clearTimeout(anima)
+    mover(-1)
 })
 
 btn_direita.addEventListener("click", (evento) => {
-    clearInterval(anima)
-    anima = setInterval(mover, 0, 1)
+    clearTimeout(anima)
+    mover(1)
 })
 
 btn_parar.addEventListener("click", (evento) => {
-    clearInterval(anima)
+    clearTimeout(anima)
 })
 
 window.onload = inicial
