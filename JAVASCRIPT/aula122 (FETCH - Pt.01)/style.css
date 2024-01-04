@@ -1,0 +1,20 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #eee;
+    padding: 30px;
+}
+
+button {
+    background-color:	#3b5998;
+    color: #eee;
+    font-weight: 600;
+    padding: 10px 70px;
+    border-radius: 7px;
+    cursor: pointer;
+}
