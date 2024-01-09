@@ -1,0 +1,23 @@
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.div_botoes {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 20px;
+}
+
+.btn_mostrar_mensagem {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}

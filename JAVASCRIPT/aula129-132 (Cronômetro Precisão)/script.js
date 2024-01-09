@@ -1,3 +1,5 @@
+import { Caixa_Mensagem } from "../aula138 (Caixa de Mensagem - Pt.04)/caixa_mensagem.js"
+
 const timer = document.querySelector("#timer")
 const btn_iniciar = document.querySelector("#btn_iniciar")
 const btn_parar = document.querySelector("#btn_parar")
@@ -38,6 +40,7 @@ btn_zerar.addEventListener("click", (evento) => {
     timer.innerHTML = "00 : 00: 00"
     clearInterval(intervalo)
     caixa_registro.innerHTML = ""
+    Caixa_Mensagem.mostrar("Cronômetro", "O tempo do cronômetro foi zerado!")
 })
 
 btn_registrar.addEventListener("click", (evento) => {
