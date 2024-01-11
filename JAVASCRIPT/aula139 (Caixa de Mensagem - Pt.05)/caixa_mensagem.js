@@ -24,7 +24,8 @@ class Caixa_Mensagem {
         "left: 0px;" +
         "width: 100%;" +
         "height: 100vh;" +
-        "background-color: rgba(0, 0, 0, 0.6);"
+        "background-color: rgba(0, 0, 0, 0.6);" + 
+        "z-index: 999999999999"
         this.div_tela_mensagem = document.createElement("div")
         this.div_tela_mensagem.setAttribute("id", "div_tela_mensagem")
         this.div_tela_mensagem.setAttribute("style", estilo_tela_mensagem)
