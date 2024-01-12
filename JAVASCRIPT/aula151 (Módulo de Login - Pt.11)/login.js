@@ -9,14 +9,10 @@ class Login {
     static estilo_fundo = null;
     static callback_okay = null;
     static callback_erro = null;
-    static config = {
-        cor: null,
-        endpoint: "https://cc6f37fa-0e0b-40f1-8e1d-b05814289169-00-2057uaggygtih.worf.replit.dev/"
-    }
     static endpoint = "https://cc6f37fa-0e0b-40f1-8e1d-b05814289169-00-2057uaggygtih.worf.replit.dev/";
 
     // CONFIGURAÇÕES DE ESTILO / CSS
-    static login = (callback_okay, callback_erro, config) => {
+    static login = (callback_okay, callback_erro) => {
         this.callback_okay = () => {
             callback_okay()
         }
@@ -33,7 +29,7 @@ class Login {
         this.estilo_modulo_css = 
         ".caixa_login { display: flex; flex-direction: column;justify-content: center; align-items: center; width: 400px;border-radius: 17px; background: rgba(128, 128, 128, 0.35);backdrop-filter: blur(15px );border: 1px solid rgba(255, 255, 255, 0.15);-webkit-backdrop-filter: blur( 15px );box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);font-family: 'Segoe UI', Tahoma, Geneva, Verdasans-serif;}" +
         
-        `.titulo_login {background-color: ${this.config.cor};box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.151);color: #eee;width: 100%;padding: 16px 24px;border-radius: 16px 16px 8px 8px;font-size: large;font-weight: 600;} ` +
+        ".titulo_login {background-color: #162330;box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.151);color: #eee;width: 100%;padding: 16px 24px;border-radius: 16px 16px 8px 8px;font-size: large;font-weight: 600;} " +
         
         ".input_login {display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;width: 100%;padding: 16px 24px;}" +
         
@@ -43,11 +39,11 @@ class Login {
         
         ".campo_login {display: flex;flex-direction: column;width: 100%;}" +
         
-        ".botoes_login {display: flex;justify-content: center;align-items: center; width: 100%;padding: 0px 20px 16px 20px;}" +
+        ".botoes_login {display: flex;justify-content: center;align-items: center;color: #024059;width: 100%;padding: 0px 20px 16px 20px;}" +
         
-        `.botoes_login button {background-color: ${this.config.cor};box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);color: #eee;width: 100%;padding: 10px;margin: 4px;border-radius: 8px;cursor: pointer;}` +
+        ".botoes_login button {background-color: #162330;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);color: #eee;width: 100%;padding: 10px;margin: 4px;border-radius: 8px;cursor: pointer;}" +
         
-        ".botoes_login button:hover {outline: 1px solid #eee; background-color: none;}"
+        ".botoes_login button:hover {background-color: #23374b;}"
         
         // IMPLEMENTAÇÃO CSS
         const estilo_login = document.createElement("style");
@@ -148,22 +144,18 @@ class Login {
         let matricula = document.querySelector("#f_email").value;
         let senha = document.querySelector("#f_senha").value;
 
-        const endpoint = `${this.config.endpoint}?matricula=${matricula}&senha=${senha}`
+        const endpoint = `https://cc6f37fa-0e0b-40f1-8e1d-b05814289169-00-2057uaggygtih.worf.replit.dev/?matricula=${matricula}&senha=${senha}`
         fetch(endpoint)
         .then(res => res.json())
         .then(res => {
             if(res) {
-                sessionStorage.setItem("logado", "true");
-                sessionStorage.setItem("matricula_logado", matricula);
-                sessionStorage.setItem("nome_logado", res.nome);
-                sessionStorage.setItem("acesso_logado", res.nome);
+                this.logado = true;
+                this.matricula_logado = matricula;
+                this.nome_logado = res.nome;
+                this.acesso_logado = res.acesso;
                 this.callback_okay();
                 this.fechar();
             } else {
-                sessionStorage.setItem("logado", "false");
-                sessionStorage.setItem("matricula_logado", "");
-                sessionStorage.setItem("nome_logado", "");
-                sessionStorage.setItem("acesso_logado", "");
                 this.callback_erro();
             }
         }) 
@@ -184,3 +176,5 @@ class Login {
         document.head.appendChild(estilo_login)
     }
 }
+
+/* export {Login}; */

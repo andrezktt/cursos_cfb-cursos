@@ -1,0 +1,26 @@
+[
+    {
+        "id": "01",
+        "produto": "Processador",
+        "marca": "Intel",
+        "modelo": "i5 13600K"
+    },
+    {
+        "id": "02",
+        "produto": "Placa de Vídeo",
+        "marca": "Nvidia",
+        "modelo": "RTX 4060Ti"
+    },
+    {
+        "id": "03",
+        "produto": "Memória RAM",
+        "marca": "Kingston",
+        "modelo": "16Gb DDR5"
+    },
+    {
+        "id": "04",
+        "produto": "Placa Mãe",
+        "marca": "Gigabyte Aorus",
+        "modelo": "B760M"
+    }
+]

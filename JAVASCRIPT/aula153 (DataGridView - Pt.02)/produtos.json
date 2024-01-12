@@ -1,0 +1,32 @@
+[
+    {
+        "codigo": "01",
+        "produto": "Processador",
+        "marca": "Intel",
+        "modelo": "i5 13600K"
+    },
+    {
+        "codigo": "02",
+        "produto": "Placa de Vídeo",
+        "marca": "Nvidia",
+        "modelo": "RTX 4060Ti"
+    },
+    {
+        "codigo": "03",
+        "produto": "Memória RAM",
+        "marca": "Kingston",
+        "modelo": "16Gb DDR5"
+    },
+    {
+        "codigo": "04",
+        "produto": "Placa Mãe",
+        "marca": "Gigabyte Aorus",
+        "modelo": "B760M"
+    },
+    {
+        "codigo": "05",
+        "produto": "Mem. SSD",
+        "marca": "Kingston",
+        "modelo": "NvMe 1Tb"
+    }
+]
