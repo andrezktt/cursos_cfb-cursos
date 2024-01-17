@@ -1,28 +1,28 @@
-import React from 'react'
-import Dados from './dados'
+import React, {useState} from 'react'
+import BasicInfo from './basico'
+import Personagens from './personagens'
+import RendValor from './rend_valor'
+import Imagens from './imagens'
+import Log from './log'
 
 export default function Body() {
-    const jogo = () => {
-        return "Final Fantasy VII Remake"
-    }
-    const pltf = "Plastation 4, Playstation 5 e PC"
-    const prod = "Square Enix"
-    const somar = (n1, n2) => {
-        return n1 + n2
-    }
+    const [num, setNum] = useState(0)
+    const [ligado, setLigado] = useState(false)
+    const [log, setLog] = useState(true)
   
     return (
-      <section>
-        <h3>Personagens:</h3>
-        <p>Cloud</p>
-        <p>Barret</p>
-        <p>Aerith</p>
-        <p>Tifa</p>
-        <Dados 
-        jogo = {jogo}
-        plataforma = {pltf} 
-        produtora = {prod} 
-        somar = {somar}/>
-      </section>
+      <main>
+        <section className='info'>
+          <BasicInfo/>
+          <Personagens/>
+          <RendValor num = {num} setNum = {setNum}/>
+          <Imagens ligado = {ligado} setLigado = {setLigado}/>
+          <Log log = {log} setLog = {setLog}/>
+        </section>
+
+        <section>
+
+        </section>
+      </main>
     )
   }
