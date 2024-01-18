@@ -13,7 +13,7 @@ export default function Log(props) {
                 {props.log ? msgLogin() : msgLogoff()}
             </p>
             <button onClick={() => props.setLog(!props.log)}>
-                {props.log ? 'Logoff' : "Login"}
+                {props.log ? 'Sair da conta' : "Login"}
             </button>
         </article>
     )

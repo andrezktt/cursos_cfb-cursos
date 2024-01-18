@@ -4,6 +4,9 @@ import Personagens from './personagens'
 import RendValor from './rend_valor'
 import Imagens from './imagens'
 import Log from './log'
+import TextColor from './textcolor'
+import TodosGames from './todosgames'
+import AvalGames from './avaliacao'
 
 export default function Body() {
     const [num, setNum] = useState(0)
@@ -19,9 +22,10 @@ export default function Body() {
           <Imagens ligado = {ligado} setLigado = {setLigado}/>
           <Log log = {log} setLog = {setLog}/>
         </section>
-
         <section>
-
+          <TextColor/>
+          <TodosGames/>
+          <AvalGames/>
         </section>
       </main>
     )
