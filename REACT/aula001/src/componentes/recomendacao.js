@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Avaliar() {
+export default function Recomendar() {
     const [game, setGame] = useState('')
     const [nota, setNota] = useState('')
 

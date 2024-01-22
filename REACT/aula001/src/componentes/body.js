@@ -6,7 +6,10 @@ import Imagens from './imagens'
 import Log from './log'
 import TextColor from './textcolor'
 import TodosGames from './todosgames'
-import AvalGames from './avaliacao'
+import Recomendar from './recomendacao'
+import Avaliar from './avaliar'
+import Cadastro from './cadastro'
+import Carro from './carro'
 
 export default function Body() {
     const [num, setNum] = useState(0)
@@ -25,7 +28,12 @@ export default function Body() {
         <section>
           <TextColor/>
           <TodosGames/>
-          <AvalGames/>
+          <Recomendar/>
+        </section>
+        <section>
+          <Avaliar/>
+          <Cadastro/>
+          <Carro fator = {10}/>
         </section>
       </main>
     )
