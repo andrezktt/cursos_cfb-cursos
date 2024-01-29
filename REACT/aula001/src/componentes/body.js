@@ -12,6 +12,7 @@ import Cadastro from './cadastro'
 /* import Carro from './carro' */
 import Tabela from './tabela'
 import IMC from './imc'
+import Calculadora from './calculadora'
 
 export default function Body() {
     const [num, setNum] = useState(0)
@@ -34,10 +35,11 @@ export default function Body() {
           <IMC/>
         </section>
         <section>
-          <Log log = {log} setLog = {setLog}/>
-          <Cadastro/>
+          {/* <Log log = {log} setLog = {setLog}/>
+          <Cadastro/> */}
           {/* <Carro fator = {10}/> */}
           <Tabela/>
+          <Calculadora/>
         </section>
       </main>
     )
